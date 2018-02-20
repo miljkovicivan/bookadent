@@ -1,3 +1,4 @@
 from django.contrib import admin
+from ordination.models import Ordination
 
-# Register your models here.
+admin.site.register(Ordination)
