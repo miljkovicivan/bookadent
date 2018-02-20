@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/login/', obtain_jwt_token),
 
-    url(r'^api/ordination/', include('ordination.urls', namespace='post')),
+    url(r'^api/ordination/', include('ordination.urls', namespace='ordination')),
+    url(r'^api/flight/', include('flight.urls', namespace='flight')),
 ]
